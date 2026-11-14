@@ -1,0 +1,6 @@
+# Bibliothèques du projet. Installation : pip install -r requirements.txt
+sphinx
+numpy
+matplotlib
+pytest
+pgmpy
