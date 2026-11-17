@@ -19,22 +19,10 @@ sont synthétiques : aucune donnée patient réelle, aucune valeur clinique.
 | Les ressources consultées et leur utilité | [`documentation/sources/`](documentation/sources/) |
 | Les questions, réponses partielles et choix faits | [`documentation/journal_de_reflexion.md`](documentation/journal_de_reflexion.md) |
 | Ce qui a été présenté et dit en réunion | [`comptes_rendus/`](comptes_rendus/) |
-| Les consignes du PRI | [`documentation/consignes.md`](documentation/consignes.md) |
-| Les règles de commit et de branches | [`documentation/conventions_git.md`](documentation/conventions_git.md) |
+| Le code du prototype | [`src/reseau_bayesien/`](src/reseau_bayesien/) |
 
-## Organisation du dépôt
-
-| Dossier | Contenu |
-| --- | --- |
-| `src/reseau_bayesien/` | Code du prototype (réseau, inférence, apprentissage) |
-| `tests/` | Tests du code |
-| `experiences/` | Scripts et résultats de l'étude chiffrée |
-| `rapport/` | Rapport pédagogique généré avec Sphinx |
-| `documentation/` | Sources commentées, journal de réflexion, consignes, conventions |
-| `comptes_rendus/` | Un compte-rendu par réunion hebdomadaire |
-
-Les fichiers sont en formats texte (Markdown, Python, reStructuredText) pour que
-Git suive chaque modification.
+Les dossiers des tests, des expériences et du rapport Sphinx seront ajoutés au
+fil du projet, quand ils auront du contenu.
 
 ## Avancement
 
@@ -50,3 +38,12 @@ Git suive chaque modification.
 | S8 · 4 au 8 janv. | Rendu, soutenance et marge | Nécessaire | À faire |
 
 Les dates supposent un rendu la semaine du 4 janvier 2027 (à confirmer).
+
+## Organisation du travail avec Git
+
+- Une branche par semaine (par exemple `Semaine-1---Fondation`), fusionnée dans
+  `main` en fin de semaine par une pull request qui résume la semaine.
+- Un commit par séance de travail au minimum, avec un message qui dit ce qui a
+  avancé.
+- Fichiers en formats texte (Markdown, Python) pour que chaque modification soit
+  suivie ; les documents bureautiques restent hors du dépôt.
