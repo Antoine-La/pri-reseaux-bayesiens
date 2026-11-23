@@ -1,5 +1,6 @@
 # Bibliothèques du projet. Installation : pip install -r requirements.txt
 sphinx
+myst-parser
 numpy
 matplotlib
 pytest

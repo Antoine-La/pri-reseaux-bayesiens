@@ -218,3 +218,12 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Fichiers déposés par l assistant, hors dépôt
+Claude outputs/
+
+# Fichiers bureautiques temporaires
+~$*
+
+# Rapport Sphinx généré
+rapport/build/
