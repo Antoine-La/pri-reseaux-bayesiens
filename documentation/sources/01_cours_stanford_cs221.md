@@ -11,7 +11,7 @@ Cinq des 19 vidéos portent sur le sujet.
 | --- | --- | --- | --- |
 | 17/11/2026 | Factor Graphs 1 – Constraint Satisfaction Problems | Nécessaire | Vidéo très instructive. Elle m'a permis de bien éclaircir ce que je n'avais pas compris en lisant le document seul CS221 sur les factor graphs. La notion est maintenant plutôt claire et je comprends que son lien avec les réseaux bayésiens est qu'en fait les réseaux bayésiens sont un factor graph particulier où chaque facteur est une probabilité conditionnelle, et le poids d'une affectation devient sa probabilité. |
 | 18/11/2026 | Factor Graphs 2 – Conditional Independence | Nécessaire | Vidéo très instructive. Elle m'a permis d'introduire et comprendre comment réduire les temps de calcul et les différentes méthodes pour résoudre ces graphs plus facilement. Cela m'a également fait comprendre la notion d'indépendance, l'indépendance conditionnelle, le conditionnement et l'élimination de variables. |
-| | Bayesian Networks 1 – Inference | | |
+| 23/11/2026 | Bayesian Networks 1 – Inference | Utile | Plusieurs autres exemples de réseaux bayésiens et bonne introduction à la notion. Certaines notions portant notamment sur les factors graphs n'ont pas été super utiles étant donné que je les avais déjà vu la semaine dernière mais plusieurs notions ont été introduites et sont importntes comme la normalisatin locale |
 | | Bayesian Networks 2 – Forward-Backward | | |
 | | Bayesian Networks 3 – Maximum Likelihood | | |
 
