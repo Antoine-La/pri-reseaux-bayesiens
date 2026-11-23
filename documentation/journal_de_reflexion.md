@@ -1,37 +1,31 @@
-# Journal de réflexion
+# Journal
 
-Les questions que je me pose, les réponses partielles, les choix faits et les
-pistes abandonnées, datés. Entrée la plus récente en haut.
+## Questions en cours
 
-## Questions ouvertes
+- Faut-il apprendre la structure du réseau, ou seulement ses probabilités ?
+  (structure classée optionnelle pour l'instant, à demander)
 
-| Depuis le | Question | Réponse partielle | État |
-| --- | --- | --- | --- |
-| 2026-11-14 | Quelle est la date du rendu et de la soutenance ? | Début janvier ; planning calé sur la semaine du 4 janvier | À poser à l'encadrant |
-| 2026-11-14 | Quel jour a lieu la réunion hebdomadaire ? | | À poser à l'encadrant |
-| 2026-11-14 | Quelle décision médicale précise le cas maternité doit-il éclairer ? | | À poser à l'encadrant |
-| 2026-11-14 | Des données synthétiques sont-elles acceptables pour le prototype ? | Hypothèse retenue : oui, faute de données réelles | À poser à l'encadrant |
-| 2026-11-14 | Faut-il apprendre la structure du réseau, ou seulement ses probabilités ? | Le sujet parle des probabilités conditionnelles ; structure classée optionnelle | À poser à l'encadrant |
-| 2026-11-16 | L'échantillonnage de Gibbs est-il nécessaire ou seulement intéressant ? | Classé intéressant : le prototype fonctionne avec l'inférence exacte sur un petit réseau | À poser à l'encadrant |
+## Réponses de l'encadrant
 
-## 2026-11-16 — Mise en conformité avec les consignes du PRI
+| Question | Réponse |
+| --- | --- |
+| Date du rendu et de la soutenance ? | Début janvier ; planning calé sur la semaine du 4 janvier |
+| Jour de la réunion hebdomadaire ? | à moi de choisir la date de la réunion |
+| Quelle décision médicale pour le cas maternité ? | le domaine médicale choisi est personnel, je choisis ce que je veux, cas de maternité en mode "césarienne ou pas", "traitement pas traitement" en fonction de différents facteurs, peut importe |
+| Données synthétiques acceptables ? | oui, faute de données réelles et également idéalement pour les 1ers prototype des données dont on a connaissnce |
+| Gibbs nécessaire ou seulement intéressant ? | absolument indispensable, le model doit fonctionner avec |
 
-- **Décision** : le planning devient un planning inversé avec priorisation
-  (nécessaire, intéressant, optionnel), voir `planning.md`.
-- **Décision** : l'apprentissage des probabilités passe en semaine 3, avant
-  l'échantillonnage de Gibbs, pour que tout le nécessaire soit terminé le
-  18 décembre.
-- **Décision** : les sources sont rangées par thème dans `documentation/sources/`,
-  avec un commentaire d'utilité par ressource.
-- **Décision** : dépôt rendu public, une branche par semaine, messages de commit
-  normalisés, voir `documentation/conventions_git.md`.
-- **Décision** : rythme d'entreprise, 4 heures par jour du lundi au vendredi.
+## Notes
 
-## 2026-11-14 — Cadrage du projet
+**23/11** — Semaine 1 terminée. Alarme calculée à la main puis vérifiée par un
+script. Rapport Sphinx en place (2 chapitres). Planning revu pour Gibbs.
 
-- **Décision** : coder le cœur du prototype à la main pour pouvoir l'expliquer,
-  puis vérifier les résultats avec une bibliothèque spécialisée (pgmpy).
-- **Décision** : données synthétiques uniquement ; le générateur de patients
-  fait partie du livrable.
-- **Décision** : rapport rédigé avec Sphinx, une page par thème, écrite la
-  semaine où le thème est traité.
+**18-20/11** — Questions éclaircies : l'inférence (calculer une probabilité à
+partir d'observations), Gibbs (estimer en tirant des exemples au hasard), pgmpy
+(pour vérifier mon code), la règle de la chaîne.
+
+**16/11** — Planning inversé avec priorités, sources rangées par thème, dépôt
+public.
+
+**14/11** — Choix de départ : coder le cœur à la main pour le comprendre, puis
+vérifier avec pgmpy ; données synthétiques ; rapport avec Sphinx.

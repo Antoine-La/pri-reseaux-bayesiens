@@ -224,3 +224,6 @@ Claude outputs/
 
 # Fichiers bureautiques temporaires
 ~$*
+
+# Rapport Sphinx généré
+rapport/build/
