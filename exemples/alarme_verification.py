@@ -25,9 +25,9 @@ print("Somme des 8 cas :", round(sum(jointe.values()), 6))
 # P(C | A)
 p_a = sum(v for (c, s, a), v in jointe.items() if a)
 p_c_et_a = sum(v for (c, s, a), v in jointe.items() if c and a)
-print("P(C | A)    =", round(p_c_et_a / p_a, 4))      # attendu : 0.374
+print("P(C | A)    =", round(p_c_et_a / p_a, 4)*100,"%")      # attendu : 0.374
 
 # P(C | A, S)
 p_a_s = sum(v for (c, s, a), v in jointe.items() if a and s)
 p_c_a_s = jointe[(True, True, True)]
-print("P(C | A, S) =", round(p_c_a_s / p_a_s, 4))     # attendu : 0.0033
+print("P(C | A, S) =", round(p_c_a_s / p_a_s, 4)*100,"%")     # attendu : 0.0033
