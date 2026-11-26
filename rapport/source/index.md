@@ -14,8 +14,9 @@ et l'appliquer à son propre domaine.
 
 01_probabilites_et_factor_graphs
 02_exemple_alarme
+03_inference_exacte
 ```
 
-Les chapitres suivants seront ajoutés au fil du projet : l'inférence exacte,
-l'échantillonnage de Gibbs, l'apprentissage des probabilités, le cas maternité
+Les chapitres suivants seront ajoutés au fil du projet : l'échantillonnage de
+Gibbs, l'apprentissage des probabilités, le cas maternité
 et l'étude du volume de données nécessaire.

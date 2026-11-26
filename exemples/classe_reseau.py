@@ -86,6 +86,28 @@ if __name__ == "__main__":
     print("P(B)          =", trajet.inference("B", {}))                        
     print("P(R)          =", trajet.inference("R", {}))                         
     print("P(P | B)      =", trajet.inference("P", {"B": True}))                
-    print("P(P | R)      =", trajet.inference("P", {"R": True}))               
+    print("P(P | R)      =", trajet.inference("P", {"R": True}))        
+
+    print("\n--- Maternité ---")
+    maternite = Reseau()
+    maternite.ajouter_variable("A", [], {(): 0.25})
+    maternite.ajouter_variable("U", [], {(): 0.12})
+    maternite.ajouter_variable("H", ["A"], {(True,): 0.10, (False,): 0.05})
+    maternite.ajouter_variable("D", ["A"], {(True,): 0.20, (False,): 0.10})
+    maternite.ajouter_variable("M", ["D"], {(True,): 0.20, (False,): 0.07})
+    maternite.ajouter_variable("C", ["H", "M", "U"], {
+        (True, True, True): 0.90,   (True, True, False): 0.70,
+        (True, False, True): 0.80,  (True, False, False): 0.55,
+        (False, True, True): 0.70,  (False, True, False): 0.35,
+        (False, False, True): 0.50, (False, False, False): 0.12})    
+
+
+    print("P(C)            =", maternite.inference("C", {}))                          # 0.211
+    print("P(C | A)        =", maternite.inference("C", {"A": True}))                 # 0.228
+    print("P(C | A, H)     =", maternite.inference("C", {"A": True, "H": True}))      # 0.594
+    print("P(C | U)        =", maternite.inference("C", {"U": True}))                 # 0.535
+    print("P(D | M)        =", maternite.inference("D", {"M": True}))                 # 0.290
+    print("P(M | C)        =", maternite.inference("M", {"C": True}))                 # 0.169
+    print("P(M | C, U)     =", maternite.inference("M", {"C": True, "U": True}))      # 0.115   
 
 
